@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.FinalAnimeNews" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/black</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="BACKGROUND">
+        <item name="android:background">#0B2925</item>
+    </style>
+
+    <style name="BACKGROUND2">
+        <item name="android:background">#3A6B80</item>
+    </style>
+
+    <style name="TEXT">
+        <item name="android:textColor">#6BC5EA</item>
+    </style>
+    <style name="TEXT1">
+        <item name="android:textColor">#3C3930</item>
+    </style>
+    <style name="BUTTON">
+        <item name="android:background">#3C3930</item>
+        <item name="android:textColor">#6BC5EA</item>
+    </style>
+
+    <style name="BLOCK1">
+        <item name="android:backgroundTint">#3C3930</item>
+        <item name="android:textColor">#6BC5EA</item>
+    </style>
+
+    <style name="BLOCK2">
+        <item name="android:backgroundTint">#3A6B80</item>
+        <item name="android:textColor">#6BC5EA</item>
+    </style>
+
+</resources>

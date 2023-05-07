@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FinalAnimeNews</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="serial_status">
+        <item>None</item>
+        <item>Watching</item>
+        <item>In the plans</item>
+        <item>Viewed</item>
+        <item>Postponed</item>
+        <item>Quit watching</item>
+    </string-array>
+
+</resources>

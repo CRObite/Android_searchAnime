@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/BACKGROUND">
+
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape1"
+            style="@style/BLOCK1"
+            android:padding="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="BACK"
+                style="@style/TEXT"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/go_web_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape1"
+            style="@style/BLOCK1"
+            android:padding="5dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="center"
+                android:text="Go Web"
+                style="@style/TEXT"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/user_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/anime_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:id="@+id/title_anime"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/shape1"
+            style="@style/BLOCK1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="News Title"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/user_info_container"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape2"
+        style="@style/BLOCK2"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/anime_type"
+                style="@style/TEXT1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Type: "
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/anime_score"
+                style="@style/TEXT1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Score: "
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/anime_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TEXT1"
+                android:textSize="16sp"
+                android:text="Released Date: "
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/anime_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TEXT1"
+                android:textSize="16sp"
+                android:text="Status: "
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/anime_episodes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TEXT1"
+                android:textSize="16sp"
+                android:text="Total Episodes: "
+                android:layout_margin="5dp"/>
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_below="@id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/anime_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TEXT1"
+                android:textSize="16sp"
+                android:text="Description: "
+                android:layout_margin="5dp"/>
+
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/errorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="Что-то пошло не так ( \n Попробуйте еще раз"
+        style="@style/TEXT"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/noResoultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="Чтобы найти аниме используйте \n поле поиска"
+        style="@style/TEXT"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+
+</RelativeLayout>

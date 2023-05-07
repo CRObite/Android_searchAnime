@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "198623544923",
+    "firebase_url": "https://animefinal-de28e-default-rtdb.firebaseio.com",
+    "project_id": "animefinal-de28e",
+    "storage_bucket": "animefinal-de28e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198623544923:android:2138b072a52d17d827a17e",
+        "android_client_info": {
+          "package_name": "com.example.finalanimenews"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "198623544923-hjckm40ki84llq339t1aa9r5bntfpc9k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCW9a0TyW7gYFhL0QBKIozBVVANh1PZQ48"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "198623544923-hjckm40ki84llq339t1aa9r5bntfpc9k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
